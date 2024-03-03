@@ -105,92 +105,130 @@
         <img srcset="./img/banner.png" class="w-full justify-center rounded-lg" alt="banner">
     </div>
 
-    <!-- Start Breadcrumb -->
-    <nav class="container mx-auto my-2 py-3 px-5 flex text-green border border-gray-200  rounded-lg"
-        aria-label="Breadcrumb">
-        <ol class="inline-flex items-center space-x-1 md:space-x-3">
-            <li class="inline-flex items-center">
-                <a href="./home.html" class="text-sm text-gray-700 hover:text-gray-900 inline-flex items-center">
-                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
-                        </path>
-                    </svg>
-                    Home
-                </a>
+    <div id="dropdownHoverProjet" class="hidden bg-green divide-y divide-gray-100 rounded-lg shadow w-44">
+        <ul class="py-2 text-sm text-black " aria-labelledby="dropdownHoverButton">
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Projet de L'Odesypano</a>
             </li>
             <li>
-                <div class="flex items-center">
-                    <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                            clip-rule="evenodd">
-                        </path>
+
+                <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="bottom"
+                    data-dropdown-trigger="hover" type="button"
+                    class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 ">Quatrième Projet
+                    <svg class="w-2.5 h-2.5 my-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                            d="m1 1 4 4 4-4" />
                     </svg>
-                    <span class="text-gray-700 hover:text-gray-900 ml-1 md:ml-2 text-sm font-medium">Présentation</span>
+                </button>
+
+                <div id="doubleDropdown" class="z-10 hidden bg-green divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                    <ul class="py-2 text-md text-black " aria-labelledby="doubleDropdownButton">
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100  ">Objectifs du Projet</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Zones d'Intervention </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Composantes du Projet</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Couts du Projet</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Schéma de Financement </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Approches de Mises en Oeuvre du
+                                projet</a>
+                        </li>
+                    </ul>
                 </div>
+
             </li>
-            <li aria-current="page">
-                <div class="flex items-center">
-                    <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <span class="text-gray-400 ml-1 md:ml-2 text-sm font-medium dark:text-gray-500">creation</span>
-                </div>
+        </ul>
+    </div>
+
+    <div id="dropdownHoverPresentation" class="hidden bg-green divide-y divide-green rounded-lg shadow w-44">
+        <ul class="py-2 text-sm text-black " aria-labelledby="dropdownHoverButton">
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Création</a>
             </li>
-        </ol>
-    </nav>
-    <!-- End Breadcrumb -->
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Champs d'Intervention</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Historique</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Organisation</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Les Directions Régionales</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Zone d'Intervention</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Groupe Cible</a>
+            </li>
+        </ul>
+    </div>
 
     <div class="container mx-auto">
-        <ul
-            class="mx-4 rounded-lg text-sm font-medium text-gray-600 shadow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+        <ul class="mx-4 text-sm font-medium text-gray-600 shadow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
             <li class="w-full focus-within:z-10">
-                <a href="#"
-                    class="inline-block w-full p-4 hover:text-black bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">
-                    Création
-                </a>
+                <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHoverPresentation"
+                    data-dropdown-trigger="hover"
+                    class="flex flex-wrap justify-between inline-block w-full p-4 bg-white border-r border-gray-200  hover:text-gray-700 hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none"
+                    type="button">Présentation
+                    <svg class="w-2.5 h-2.5 my-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                            d="m1 1 4 4 4-4" />
+                    </svg>
+                </button>
+            </li>
+            <li class="w-full focus-within:z-10">
+                <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHoverProjet"
+                    data-dropdown-trigger="hover"
+                    class="flex flex-wrap justify-between inline-block w-full p-4 bg-white border-r border-gray-200  hover:text-gray-700 hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none"
+                    type="button">Projet
+                    <svg class="w-2.5 h-2.5 my-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                            d="m1 1 4 4 4-4" />
+                    </svg>
+                </button>
             </li>
             <li class="w-full focus-within:z-10">
                 <a href="#"
-                    class="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">
-                    Champs d'Intervention
-                </a>
+                    class="inline-block w-full p-4 bg-white border-r border-gray-200  hover:text-gray-700 hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">Domaine
+                    d'activité</a>
             </li>
             <li class="w-full focus-within:z-10">
                 <a href="#"
-                    class="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">
-                    Historique
-                </a>
+                    class="inline-block w-full p-4 bg-white border-r border-gray-200  hover:text-gray-700 hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">Approches
+                    de developpement</a>
             </li>
             <li class="w-full focus-within:z-10">
                 <a href="#"
-                    class="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">
-                    Organisation
-                </a>
+                    class="inline-block w-full p-4 bg-white border-r border-gray-200  hover:text-gray-700 hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">Partenariat</a>
             </li>
             <li class="w-full focus-within:z-10">
                 <a href="#"
-                    class="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">
-                    Les Directions Régionales
-                </a>
+                    class="inline-block w-full p-4 bg-white border-r border-gray-200  hover:text-gray-700 hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">Outil
+                    de gestion</a>
             </li>
             <li class="w-full focus-within:z-10">
                 <a href="#"
-                    class="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">
-                    Zone d'Intervention
-                </a>
+                    class="inline-block w-full p-4 bg-white border-r border-gray-200  hover:text-gray-700 hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">Témoinages</a>
             </li>
             <li class="w-full focus-within:z-10">
                 <a href="#"
-                    class="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">
-                    Groupe Cible
-                </a>
+                    class="inline-block w-full p-4 bg-white border-r border-gray-200  hover:text-gray-700 hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">Accès
+                    à l'information</a>
             </li>
         </ul>
 
@@ -199,77 +237,79 @@
     <div class="container mx-auto flex flex-wrap">
         <div class="md:w-3/4 sm:w-full">
             <div class="container mx-auto flex flex-col items-center py-3">
+                <a href="#"
+                    class="block my-2 w-full max-w-[999px] p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-200 ">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-700">Les champs
+                        d’intervention de l’ODESYPANO sont les suivants :</h5>
+                </a>
+                <div class="container mx-auto flex flex-wrap">
+                    <div class="md:w-1/3 sm:w-full">
+                        <div class="container mx-auto flex flex-col items-center py-3">
+                            <a href="#"
+                                class="block my-2 w-full max-w-[999px] p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-200 ">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-700">Les
+                                    champs d’intervention de l’ODESYPANO sont les suivants :</h5>
+                            </a>
 
-                <div class="block my-2 w-full max-w-[999px] p-6 bg-white border border-gray-200 rounded-lg shadow ">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-700">Création </h5>
-                    <hr class="h-px mb-8 bg-gray-200 border-0 dark:bg-gray-700">
-                    <p class="font-normal text-gray-700 dark:text-gray-500 text-justify">La région du Nord Ouest de la
-                        Tunisie est constituée d’un vaste espace
-                        montagneux et forestier traversé par les plus importantes rivières du pays et disposant de
-                        potentialités naturelles importantes
-                        mais ses conditions socio-économiques demeurent difficiles. A la différence des autres régions,
-                        le Nord Ouest abrite la
-                        quasi-totalité des barrages et des retenues d’eau (château d’eau de la Tunisie) servant la
-                        majorité des populations tunisienne.
-                        Les zones montagneuses et forestières du Nord ouest, faisant partie de cette grande région,
-                        connaissaient, plus particulièrement,
-                        des problèmes sérieux dus essentiellement à l’exiguïté des exploitations dont la taille est très
-                        réduite et fortement morcelée.
-                        La forte pression sur les ressources en terres et les parcours se traduit par le défrichement
-                        des forêts, la surexploitation des
-                        pâturages et l’érosion des sols. L’enclavement des populations est aussi un problème de taille.
-                        Le manque d’eau potable
-                        représente aussi une contrainte pour ces populations. Le taux de chômage dépasse la moyenne
-                        nationale, favorisant la migration
-                        des jeunes vers les grandes agglomérations.<br><br>
 
-                        C’est dans le cadre de la volonté politique du gouvernement Tunisien de conserver les ressources
-                        en eau et en sol et de
-                        promouvoir un développement soutenu de ces zones (zones montagneuses des quatre gouvernorats du
-                        Nord Ouest :Beja, Jendouba
-                        , Kef, Siliana et du gouvernorat de Bizerte), qu’il a été décidé de créer en 1981, l’Office de
-                        Développement Sylvo-Pastoral
-                        du Nord-Ouest (ODESYPANO) par la loi 81-17 du 09 mars 1981. <br><br>
 
-                        L’ODESYPANO est un établissement public à caractère non administratif (EPNA) doté de la
-                        personnalité civile et de
-                        l’autonomie financière, placé sous la tutelle du Ministère de l’Agriculture, des Ressources
-                        Hydrauliques et de la Pêche.</p>
+
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 sm:w-full">
+                        <div class="container mx-auto flex flex-col items-center py-3">
+                            <a href="#"
+                                class="block my-2 w-full max-w-[999px] p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-200 ">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-700">Les
+                                    champs d’intervention de l’ODESYPANO sont les suivants :</h5>
+                            </a>
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
                 </div>
+
+
+
+
 
 
             </div>
         </div>
 
-        <div class="md:w-1/4 w-full mx-auto ">
+        <div class="md:w-1/4 sm:w-full ">
 
-            <form class="flex items-center max-w-sm m-4">
-                <label for="simple-search" class="sr-only">Search</label>
-                <div class="relative w-full">
+            <form class="max-w-md mx-auto">
+                <label for="default-search"
+                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                <div class="relative">
                     <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 20 20">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                         </svg>
                     </div>
-                    <input type="text" id="simple-search"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
-                        placeholder="Search branch name..." required />
+                    <input type="search" id="default-search"
+                        class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search Mockups, Logos..." required />
+                    <button type="submit"
+                        class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
                 </div>
-                <button type="submit"
-                    class="p-2.5 ms-2 text-sm font-medium text-white bg-green rounded-lg border border-black hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
-                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 20 20">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                    </svg>
-                    <span class="sr-only">Search</span>
-                </button>
             </form>
 
-            <div class="m-4 ">
-                <div class="max-w-sm align-middle bg-white border border-gray-200 rounded-lg shadow">
+            <div class="m-4">
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
                     <div
                         class="w-full text-sm px-4 py-2 font-bold text-center rtl:text-right text-black bg-green border-b border-gray-200 rounded-t-lg focus:outline-none">
                         Annonces
