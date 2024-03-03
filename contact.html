@@ -1,0 +1,433 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        main: '#61A3BA',
+                        first: '#FFFFDD',
+                        green: '#A5DD9B',
+                        secondgreen: '#C5EBAA',
+                        third: '#65273C',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+
+</head>
+
+<body>
+    <!-- <header class="w-full"> -->
+    <header class="container mx-auto">
+        <nav class="w-full ">
+            <div class="bg-secondgreen flex flex-wrap items-center justify-between mx-auto rounded-b-lg md:px-10 px-4">
+                <a href="home.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="./img/logo.png" class="w-12" alt="logo">
+                    <span class="self-center text-2xl  font-bold whitespace-nowrap ">Odesypano</span>
+                </a>
+                <div class="flex items-center lg:order-2 space-x-1 lg:space-x-0 rtl:space-x-reverse">
+                    <button type="button" data-dropdown-toggle="language-dropdown-menu"
+                        class="inline-flex items-center font-medium justify-center px-4 py-5 text-md text-black cursor-pointer hover:bg-green ">
+                        Français
+                    </button>
+                    <!-- Dropdown lunguage -->
+                    <div class="z-50 hidden my-4 text-base list-none bg-gray-100 divide-y divide-gray-100 rounded-lg shadow "
+                        id="language-dropdown-menu">
+                        <ul class="py-2 font-medium" role="none">
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green "
+                                    role="menuitem">
+                                    <div class="inline-flex items-center">
+                                        English
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green "
+                                    role="menuitem">
+                                    <div class="inline-flex items-center">
+                                        Français
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green "
+                                    role="menuitem">
+                                    <div class="inline-flex items-center">
+                                        العربية
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button data-collapse-toggle="navbar-language" type="button"
+                        class="inline-flex items-center mx-1 p-2 w-10 h-10 justify-center text-sm text-black-500 rounded-lg hover:bg-white lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-language" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
+                    id="navbar-language">
+                    <ul
+                        class="flex flex-col font-medium p-4 lg:p-0 bg-tansparent lg:space-x-8 rtl:space-x-reverse lg:flex-row ">
+                        <li>
+                            <a href="#" class="block px-3 py-5 text-black font-bold hover:bg-white"
+                                aria-current="page">Acceuil</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-3 py-5 text-black font-bold hover:bg-white">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-3 py-5 text-black font-bold hover:bg-white ">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container  w-full mx-auto my-2">
+        <img srcset="./img/banner.png" class="w-full justify-center rounded-lg" alt="banner">
+    </div>
+
+    
+    <div id="dropdownHoverProjet" class="hidden bg-green divide-y divide-gray-100 rounded-lg shadow w-44">
+        <ul class="py-2 text-sm text-black " aria-labelledby="dropdownHoverButton">
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Projet de L'Odesypano</a>
+            </li>
+            <li>
+
+                <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="bottom"
+                    data-dropdown-trigger="hover" type="button"
+                    class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 ">Quatrième Projet
+                    <svg class="w-2.5 h-2.5 my-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                            d="m1 1 4 4 4-4" />
+                    </svg>
+                </button>
+
+                <div id="doubleDropdown" class="z-10 hidden bg-green divide-y divide-gray-100 rounded-lg shadow w-44">
+                    <ul class="py-2 text-md text-black " aria-labelledby="doubleDropdownButton">
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Objectifs du Projet</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Zones d'Intervention </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Composantes du Projet</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Couts du Projet</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Schéma de Financement </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Approches de Mises en Oeuvre du
+                                projet</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+
+    <!-- Start Breadcrumb -->
+    <nav class="container mx-auto my-2 py-3 px-5 flex text-green border border-gray-200  rounded-lg"
+        aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+                <a href="./home.html" class="text-sm text-gray-700 hover:text-gray-900 inline-flex items-center">
+                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+                        </path>
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <div class="flex items-center">
+                    <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                            clip-rule="evenodd">
+                        </path>
+                    </svg>
+                    <span class="text-gray-700 hover:text-gray-900 ml-1 md:ml-2 text-sm font-medium">Contact</span>
+                </div>
+            </li>
+        </ol>
+    </nav>
+    <!-- End Breadcrumb -->
+
+
+    <div class="container mx-auto">
+        <ul class="mx-4 text-sm font-medium text-gray-600 shadow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+            <li class="w-full focus-within:z-10">
+                <a href="./creation.html"
+                    class="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">Présentation</a>
+            </li>
+            <li class="w-full focus-within:z-10">
+                <a href="#"
+                    class="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">Projet</a>
+            </li>
+            <li class="w-full focus-within:z-10">
+                <a href="#"
+                    class="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">Domaine
+                    d'activité</a>
+            </li>
+            <li class="w-full focus-within:z-10">
+                <a href="#"
+                    class="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">Approches
+                    de developpement</a>
+            </li>
+            <li class="w-full focus-within:z-10">
+                <a href="#"
+                    class="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">Partenariat</a>
+            </li>
+            <li class="w-full focus-within:z-10">
+                <a href="#"
+                    class="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">Outil
+                    de gestion</a>
+            </li>
+            <li class="w-full focus-within:z-10">
+                <a href="#"
+                    class="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">Témoinages</a>
+            </li>
+            <li class="w-full focus-within:z-10">
+                <a href="#"
+                    class="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">Accès
+                    à l'information</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="container mx-auto flex flex-wrap">
+        <div class="md:w-3/4 sm:w-full mx-auto">
+            <!-- component -->
+            <!-- Tailwind Play: https://play.tailwindcss.com/qIqvl7e7Ww  -->
+
+
+            <div class="flex min-h-screen m-4 p-6 items-center justify-start bg-white border border-gray-200 rounded-lg shadow">
+                <div class="mx-auto w-full max-w-lg">
+                    <h1 class="text-4xl font-medium">Contact</h1>
+                    
+                    <li class="mt-3">Adresse :    Av de l'Environnement Béja 9000 Tunisie</li>
+                    <li class="mt-3">Téléphone:   +216 78 450 500</li>
+                    <li class="mt-3">Fax :          78 45 47 18</li>
+                    <li class="mt-3">Email us at dgle.odesypano@email.ati.tn or message us here:</li>
+
+                    <form action="https://api.web3forms.com/submit" class="mt-10">
+
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                        <div class="grid gap-6 sm:grid-cols-2">
+                            <div class="relative z-0">
+                                <input type="text" name="name"
+                                    class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                                    placeholder=" " />
+                                <label
+                                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">
+                                    Nom ou raison sociale</label>
+                            </div>
+                            <div class="relative z-0">
+                                <input type="text" name="email"
+                                    class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                                    placeholder=" " />
+                                <label
+                                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">
+                                    email</label>
+                            </div>
+                            <div class="relative z-0">
+                                <input type="text" name="name"
+                                    class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                                    placeholder=" " />
+                                <label
+                                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">
+                                    Adresse </label>
+                            </div>
+                            <div class="relative z-0">
+                                <input type="text" name="email"
+                                    class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                                    placeholder=" " />
+                                <label
+                                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">
+                                    Téléphone</label>
+                            </div>
+                            
+                            <div class="relative z-0 col-span-2">
+                                <textarea name="message" rows="5"
+                                    class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                                    placeholder=" "></textarea>
+                                <label
+                                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">
+                                    message</label>
+                            </div>
+
+                            <button type="submit" class="relative z-0 col-span-2 rounded-md bg-green px-10 py-2 text-black font-bold hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">Envoyer
+                            Message</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:w-1/4 sm:w-full mx-auto ">
+            <form class="flex items-center max-w-sm m-4">
+                <label for="simple-search" class="sr-only">Search</label>
+                <div class="relative w-full">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                    <input type="text" id="simple-search"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
+                        placeholder="Search branch name..." required />
+                </div>
+                <button type="submit"
+                    class="p-2.5 ms-2 text-sm font-medium text-white bg-green rounded-lg border border-black hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                    </svg>
+                    <span class="sr-only">Search</span>
+                </button>
+            </form>
+
+            <div class="m-4">
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                    <div
+                        class="w-full text-sm px-4 py-2 font-bold text-center rtl:text-right text-black bg-green border-b border-gray-200 rounded-t-lg focus:outline-none">
+                        Annonces
+                    </div>
+                    <div class="py-5">
+                        <a type="button"
+                            class="w-full text-sm px-4 py-2 font-medium text-left rtl:text-right border-b border-gray-200 cursor-pointer hover:bg-green hover:text-black focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
+                            Appel d'offres
+                        </a>
+                        <a type="button"
+                            class="w-full text-sm px-4 py-2 font-medium text-left rtl:text-right border-b border-gray-200 cursor-pointer hover:bg-green hover:text-black focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
+                            Cahier des charges
+                        </a>
+                        <a type="button"
+                            class="w-full text-sm px-4 py-2 font-medium text-left rtl:text-right border-b border-gray-200 cursor-pointer hover:bg-green hover:text-black focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
+                            Concours
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-4">
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                    <div
+                        class="w-full text-sm px-4 py-2 font-bold text-center rtl:text-right text-black bg-green border-b border-gray-200 rounded-t-lg focus:outline-none">
+                        Documents et Rapports
+                    </div>
+                    <div class="py-5">
+                        <a type="button"
+                            class="w-full text-sm px-4 py-2 font-medium text-left rtl:text-right border-b border-gray-200 cursor-pointer hover:bg-green hover:text-black focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
+                            Rapports
+                        </a>
+                        <a type="button"
+                            class="w-full text-sm px-4 py-2 font-medium text-left rtl:text-right border-b border-gray-200 cursor-pointer hover:bg-green hover:text-black focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
+                            Publications
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="m-4">
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                    <div
+                        class="w-full text-sm px-4 py-2 font-bold text-center rtl:text-right text-black bg-green border-b border-gray-200 rounded-t-lg focus:outline-none">
+                        Photos et vidéo
+                    </div>
+                    <div class="py-5">
+                        <a type="button"
+                            class="w-full text-sm px-4 py-2 font-medium text-left rtl:text-right border-b border-gray-200 cursor-pointer hover:bg-green hover:text-black focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
+                            Photos
+                        </a>
+                        <a type="button"
+                            class="w-full text-sm px-4 py-2 font-medium text-left rtl:text-right border-b border-gray-200 cursor-pointer hover:bg-green hover:text-black focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
+                            Vidéos
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="m-4">
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                    <div
+                        class="w-full text-sm px-4 py-2 font-bold text-center rtl:text-right text-black bg-green border-b border-gray-200 rounded-t-lg focus:outline-none">
+                        Liens Utiles
+                    </div>
+                    <div class="py-5">
+                        <a type="button"
+                            class="w-full text-sm px-4 py-2 font-medium text-left rtl:text-right border-b border-gray-200 cursor-pointer hover:bg-green hover:text-black focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
+                            Liens Nationaux
+                        </a>
+                        <a type="button"
+                            class="w-full text-sm px-4 py-2 font-medium text-left rtl:text-right border-b border-gray-200 cursor-pointer hover:bg-green hover:text-black focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
+                            Liens Internationaux
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="bg-green rounded-t-lg container mx-auto ">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="home.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="./img/logo.png" class="w-10" alt="logo">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap ">Odesypano</span>
+                </a>
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-bold text-black sm:mb-0 ">
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto  lg:my-2" />
+            <span class="block text-sm text-black sm:text-center ">© 2024 <a href="home.html"
+                    class="hover:underline">Odesypano™</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
+</body>
+
+</html>
