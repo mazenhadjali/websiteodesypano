@@ -3,31 +3,17 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Layout from './layout';
-import { A, B, MAZEN, SAMER, YOSR } from './routes';
+import { HOME } from './routes';
+import Home from './pages/home';
 
 const router = createBrowserRouter([
   {
-    path: A,
+    path: HOME,
     element: <Layout />,
     children: [
       {
-        path: SAMER,
-        element: <div>Sameer</div>
-      },
-    ]
-
-  },
-  {
-    path: B,
-    element: <Layout />,
-    children: [
-      {
-        path: MAZEN,
-        element: <div>mazen</div>
-      },
-      {
-        path: YOSR,
-        element: <div>yosr</div>
+        path: HOME,
+        element: <Home />
       },
     ]
 
