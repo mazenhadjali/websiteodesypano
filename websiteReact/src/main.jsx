@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { CREATION, HOME, PRESNTATION } from './routes';
+import { CONTACT, CREATION, FAQ, HOME, PRESNTATION } from './routes';
 import Home from './pages/home';
 import HomeLayout from './layout/homeLayout';
 import PresentationLayout from './layout/presentationLayout';
@@ -16,6 +16,14 @@ const router = createBrowserRouter([
         path: HOME,
         element: <Home />
       },
+      {
+        path: CONTACT,
+        element: <div>contact</div>
+      },
+      {
+        path: FAQ,
+        element: <div>FAQ</div>
+      },
     ]
 
   },
@@ -25,7 +33,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: CREATION,
-        element: <div>a</div>
+        element: <div>creation</div>
       },
     ]
 

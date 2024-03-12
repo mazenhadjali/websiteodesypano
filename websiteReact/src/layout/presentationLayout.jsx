@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from './navbar'
-import Footer from './footer'
 import { Outlet } from "react-router-dom";
 import PresentationMenu from '../components/presentationManu';
 import RightNavigation from '../components/rightNavigation';
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 export default function PresentationLayout() {
     return (

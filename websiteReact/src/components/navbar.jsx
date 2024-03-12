@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { CONTACT, FAQ, HOME } from "../routes";
+
 const Navbar = () => {
     return (
         <div className="w-full ">
@@ -58,14 +61,13 @@ const Navbar = () => {
                     <ul
                         className="flex flex-col font-medium p-4 lg:p-0 bg-tansparent lg:space-x-8 rtl:space-x-reverse lg:flex-row ">
                         <li>
-                            <a href="#" className="block px-3 py-5 text-black font-bold hover:bg-white"
-                                aria-current="page">Acceuil</a>
+                            <Link to={HOME} className="block px-3 py-5 text-black font-bold hover:bg-white" aria-current="page">Acceuil</Link>
                         </li>
                         <li>
-                            <a href="#" className="block px-3 py-5 text-black font-bold hover:bg-white">Contact</a>
+                            <Link to={CONTACT} className="block px-3 py-5 text-black font-bold hover:bg-white">Contact</Link>
                         </li>
                         <li>
-                            <a href="#" className="block px-3 py-5 text-black font-bold hover:bg-white ">FAQ</a>
+                            <Link to={FAQ} className="block px-3 py-5 text-black font-bold hover:bg-white ">FAQ</Link>
                         </li>
                     </ul>
                 </div>
