@@ -12,11 +12,14 @@ function Home() {
             <div className="container mx-auto flex flex-wrap">
 
                 <div className="md:w-3/4 sm:w-full">
-                    <div className="container flex flex-col items-center py-2">
-                        <Article key={"a"} title={"test"} body={"test body"} link={"jneafn"} />
+                    <div className="container items-center py-2">
+                        <Article key={"a"} title={"test1"} body={"test body1"} link={"jneafn"} />
+                        <Article key={"b"} title={"test2"} body={"test body2"} link={"jneafn"} />
+                        <Article key={"c"} title={"test3"} body={"test body3"} link={"jneafn"} />
+                        <Article key={"d"} title={"test4"} body={"test body4"} link={"jneafn"} />
                     </div>
                 </div>
-                <div className="md:w-1/4 sm:w-full">
+                <div className="md:w-1/4 sm:w-full sm:mx-auto">
                     <RightNavigation />
                 </div>
             </div>
