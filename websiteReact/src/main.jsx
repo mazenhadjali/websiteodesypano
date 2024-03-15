@@ -6,6 +6,7 @@ import { CONTACT, CREATION, FAQ, HOME, PRESNTATION } from './routes';
 import Home from './pages/home';
 import HomeLayout from './layout/homeLayout';
 import PresentationLayout from './layout/presentationLayout';
+import './i18n';
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,6 @@ const router = createBrowserRouter([
         element: <div>FAQ</div>
       },
     ]
-
   },
   {
     path: PRESNTATION,
