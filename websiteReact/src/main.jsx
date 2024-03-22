@@ -7,6 +7,7 @@ import Home from './pages/home';
 import HomeLayout from './layout/homeLayout';
 import PresentationLayout from './layout/presentationLayout';
 import './i18n';
+import Contact from './pages/contact';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
       },
       {
         path: CONTACT,
-        element: <div>contact</div>
+        element: <Contact />
       },
       {
         path: FAQ,
