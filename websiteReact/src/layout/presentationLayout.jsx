@@ -4,6 +4,7 @@ import PresentationMenu from '../components/presentationManu';
 import RightNavigation from '../components/rightNavigation';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
+import Breadcrumb from '../components/breadcrumb';
 
 export default function PresentationLayout() {
     return (
@@ -12,6 +13,7 @@ export default function PresentationLayout() {
             <div className="container  w-full mx-auto my-2">
                 <img src="/img/banner.png" className="w-full justify-center rounded-lg" alt="banner" />
             </div>
+            <Breadcrumb />
             <PresentationMenu />
             <div className="container mx-auto flex flex-wrap">
 
