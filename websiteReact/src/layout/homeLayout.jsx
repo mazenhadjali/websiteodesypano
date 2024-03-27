@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import { Outlet } from "react-router-dom";
@@ -6,8 +6,21 @@ import Carousel from '../components/carousel';
 import HomeMenu from '../components/homeMenu';
 import RightNavigation from '../components/rightNavigation';
 import Breadcrumb from '../components/breadcrumb';
+import { useTranslation } from 'react-i18next';
 
 export default function HomeLayout() {
+
+    const { i18n } = useTranslation();
+
+    useEffect(() => {
+        const storedLang = localStorage.getItem('language');
+        if (storedLang) {
+            i18n.changeLanguage(storedLang);
+        } else {
+            i18n.changeLanguage('fr');
+        }
+    }, [i18n]);
+
     return (
         <React.Fragment>
             <Navbar />

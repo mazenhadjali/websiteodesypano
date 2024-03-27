@@ -1,7 +1,18 @@
 import { Link } from "react-router-dom";
 import { CONTACT, FAQ, HOME } from "../routes";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+
+    const { t, i18n } = useTranslation();
+
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng); 
+        localStorage.setItem('language', lng);
+    };
+
+
     return (
         <div className="w-full ">
             <div className="bg-secondgreen flex flex-wrap items-center justify-between mx-auto rounded-b-lg md:px-10 px-4">
@@ -12,35 +23,35 @@ const Navbar = () => {
                 <div className="flex items-center lg:order-2 space-x-1 lg:space-x-0 rtl:space-x-reverse">
                     <button type="button" data-dropdown-toggle="language-dropdown-menu"
                         className="inline-flex items-center font-medium justify-center px-4 py-5 text-md text-black cursor-pointer hover:bg-green ">
-                        Français
+                        Language
                     </button>
 
                     <div className="z-50 hidden my-4 text-base list-none bg-gray-100 divide-y divide-gray-100 rounded-lg shadow "
                         id="language-dropdown-menu">
                         <ul className="py-2 font-medium" role="none">
                             <li>
-                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green "
+                                <button onClick={() => changeLanguage("en")} className="block px-4 py-2 text-sm text-gray-700 hover:bg-green "
                                     role="menuitem">
                                     <div className="inline-flex items-center">
                                         English
                                     </div>
-                                </a>
+                                </button>
                             </li>
                             <li>
-                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green "
+                                <button onClick={() => changeLanguage("fr")} className="block px-4 py-2 text-sm text-gray-700 hover:bg-green "
                                     role="menuitem">
                                     <div className="inline-flex items-center">
                                         Français
                                     </div>
-                                </a>
+                                </button>
                             </li>
                             <li>
-                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green "
+                                <button onClick={() => changeLanguage("ar")} className="block px-4 py-2 text-sm text-gray-700 hover:bg-green "
                                     role="menuitem">
                                     <div className="inline-flex items-center">
                                         العربية
                                     </div>
-                                </a>
+                                </button>
                             </li>
                         </ul>
                     </div>
