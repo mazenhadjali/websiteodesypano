@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { CREATION } from "../routes";
+import { CREATION, APPROCHEDEDEV, DOMAINEACTIVITE,PARTENARIAT,OUTILDEGESTION,TEMOINAGE,ACCESINFO, PROJET } from "../routes";
 import { useTranslation } from 'react-i18next';
 
 function HomeMenu() {
@@ -13,32 +13,32 @@ function HomeMenu() {
                         className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">{t('presentation')}</Link>
                 </li>
                 <li className="w-full focus-within:z-10">
-                    <a href="#"
-                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Projet</a>
+                    <Link to={PROJET}
+                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Projet</Link>
                 </li>
                 <li className="w-full focus-within:z-10">
-                    <a href="#"
-                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Domaine d'activité</a>
+                    <Link to={DOMAINEACTIVITE}
+                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Domaine d'activité</Link>
                 </li>
                 <li className="w-full focus-within:z-10">
-                    <a href="#"
-                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Approches de developpement</a>
+                    <Link to={APPROCHEDEDEV}
+                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Approches de developpement</Link>
                 </li>
                 <li className="w-full focus-within:z-10">
-                    <a href="#"
-                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Partenariat</a>
+                    <Link to={PARTENARIAT}
+                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Partenariat</Link>
                 </li>
                 <li className="w-full focus-within:z-10">
-                    <a href="#"
-                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Outil de gestion</a>
+                    <Link to={OUTILDEGESTION}
+                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Outil de gestion</Link>
                 </li>
                 <li className="w-full focus-within:z-10">
-                    <a href="#"
-                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Témoinages</a>
+                    <Link to={TEMOINAGE}
+                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Témoinages</Link>
                 </li>
                 <li className="w-full focus-within:z-10">
-                    <a href="#"
-                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Accès à l'information</a>
+                    <Link to={ACCESINFO}
+                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Accès à l'information</Link>
                 </li>
             </ul>
 

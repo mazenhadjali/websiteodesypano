@@ -1,3 +1,7 @@
+import Contact from "../pages/contact"
+import { Link } from "react-router-dom";
+import { CONTACT, FAQ, HOME } from "../routes";
+
 function Footer() {
     return (
         <footer className="bg-green rounded-t-lg container mx-auto ">
@@ -18,7 +22,7 @@ function Footer() {
                             <a href="#" className="hover:underline me-4 md:me-6">Licensing</a>
                         </li>
                         <li>
-                            <a href="#" className="hover:underline">Contact</a>
+                            <Link to={CONTACT} href="#" className="hover:underline">Contact</Link>
                         </li>
                     </ul>
                 </div>

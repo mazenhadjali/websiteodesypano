@@ -1,12 +1,12 @@
 import React from 'react'
 import { Outlet } from "react-router-dom";
-import PresentationMenu from '../components/presentationMenu';
+import ProjetMenu from '../components/projetMenu';
 import RightNavigation from '../components/rightNavigation';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import Breadcrumb from '../components/breadcrumb';
 
-export default function PresentationLayout() {
+export default function ProjetLayout() {
     return (
         <React.Fragment>
             <Navbar />
@@ -14,7 +14,7 @@ export default function PresentationLayout() {
                 <img src="/img/banner.png" className="w-full justify-center rounded-lg" alt="banner" />
             </div>
             <Breadcrumb />
-            <PresentationMenu />
+            <ProjetMenu />
             <div className="container mx-auto flex flex-wrap">
 
                 <div className="md:w-3/4 sm:w-full">

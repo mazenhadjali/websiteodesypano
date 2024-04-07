@@ -1,3 +1,7 @@
+import img1 from './../assets/banner2.jpg'
+import img2 from './../assets/banner3.jpg'
+import img3 from './../assets/banner4.jpg'
+
 
 function Carousel() {
     return (
@@ -5,13 +9,13 @@ function Carousel() {
             <div id="default-carousel" className="relative" data-carousel="static">
                 <div className="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
                     <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/img/banner2.jpg" className="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
+                        <img src={img3} className="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
                     </div>
                     <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/img/banner3.jpg" className="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
+                        <img src={img2} className="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
                     </div>
                     <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/img/banner4.jpg" className="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
+                        <img src={img1} className="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
                     </div>
                 </div>
                 <div className="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">

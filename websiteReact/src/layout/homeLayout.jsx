@@ -34,7 +34,7 @@ export default function HomeLayout() {
                 <div className="md:w-3/4 sm:w-full">
                     <Outlet />
                 </div>
-                <div className="md:w-1/4 sm:w-full sm:mx-auto">
+                <div className="md:w-1/4 px-2 sm:w-full sm:mx-auto">
                     <RightNavigation />
                 </div>
             </div>
