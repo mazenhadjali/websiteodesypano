@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { CREATION, APPROCHEDEDEV, DOMAINEACTIVITE,PARTENARIAT,OUTILDEGESTION,TEMOINAGE,ACCESINFO, PROJET } from "../routes";
+import { CREATION, APPROCHEDEDEV, DOMAINEACTIVITE,PARTENARIAT,OUTILDEGESTION,TEMOINAGE,ACCESINFO, PROJETODYSEPANO } from "../routes";
 import { useTranslation } from 'react-i18next';
 
 function HomeMenu() {
@@ -13,7 +13,7 @@ function HomeMenu() {
                         className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">{t('presentation')}</Link>
                 </li>
                 <li className="w-full focus-within:z-10">
-                    <Link to={PROJET}
+                    <Link to={PROJETODYSEPANO}
                         className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Projet</Link>
                 </li>
                 <li className="w-full focus-within:z-10">

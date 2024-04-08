@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { CONTACT, APPROCHEDEDEV,CHAMPSINTERVENTION,HISTORIQUE,ORGANISATION,DIRECTIONGENARALE,ZONEINTERVENTION,GROUPECIBLE, DOMAINEACTIVITE,PARTENARIAT,OUTILDEGESTION,TEMOINAGE,ACCESINFO, PROJET, CREATION, FAQ, HOME, PRESNTATION } from './routes';
+import { OBJECTIF,ZONE,COMPOSANTES,COUTS,SCHEMA,APPROCHE,CONTACT,QUATERIEMEPROJET,PROJETODYSEPANO, APPROCHEDEDEV,CHAMPSINTERVENTION,HISTORIQUE,ORGANISATION,DIRECTIONGENARALE,ZONEINTERVENTION,GROUPECIBLE, DOMAINEACTIVITE,PARTENARIAT,OUTILDEGESTION,TEMOINAGE,ACCESINFO, PROJET, CREATION, FAQ, HOME, PRESNTATION } from './routes';
 import './i18n';
 import Home from './pages/home';
 import HomeLayout from './layout/homeLayout';
@@ -24,6 +24,14 @@ import Organisation from './pages/organisation';
 import DirecionGenerale from './pages/direcionGenerale';
 import ZoneIntervention from './pages/zoneIntervention';
 import GroupeCible from './pages/groupeCible';
+import QuateriemeProjet from './pages/quateriemeProjet';
+import ProjetOdysepano from './pages/projet';
+import Objectif from './pages/objectif';
+import Zone from './pages/zone';
+import Composantes from './pages/composantes';
+import Couts from './pages/couts';
+import Schema from './pages/schema';
+import Approche from './pages/approche';
 
 const router = createBrowserRouter([
   {
@@ -110,8 +118,36 @@ const router = createBrowserRouter([
     element: <ProjetLayout />,
     children: [
       {
-        path: PROJET,
-        element: <Projet />
+        path: PROJETODYSEPANO,
+        element: <ProjetOdysepano />
+      },
+      {
+        path: QUATERIEMEPROJET,
+        element: <QuateriemeProjet />
+      },
+      {
+        path: OBJECTIF,
+        element: <Objectif />
+      },
+      {
+        path: ZONE,
+        element: <Zone />
+      },
+      {
+        path: COMPOSANTES,
+        element: <Composantes />
+      },
+      {
+        path: COUTS,
+        element: <Couts />
+      },
+      {
+        path: SCHEMA,
+        element: <Schema />
+      },
+      {
+        path: APPROCHE,
+        element: <Approche />
       },
     ]
 
