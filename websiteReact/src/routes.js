@@ -11,7 +11,6 @@ export const TEMOINAGE = HOME + "temoinage"
 export const ACCESINFO = HOME + "acces-information"
 
 
-
 export const PRESNTATION = "/presentation"
 
 export const CREATION = PRESNTATION + "/creation"
@@ -21,7 +20,6 @@ export const ORGANISATION = PRESNTATION + "/organisation"
 export const DIRECTIONGENARALE = PRESNTATION + "/direction-regionale"
 export const ZONEINTERVENTION = PRESNTATION + "/zone-intervention"
 export const GROUPECIBLE = PRESNTATION + "/groupe-cible"
-
 
 
 export const PROJET = "/projet"

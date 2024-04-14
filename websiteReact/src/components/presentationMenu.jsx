@@ -13,43 +13,43 @@ function PresentationMenu() {
                 <li className="w-full focus-within:z-10">
                     <Link to={CREATION}
                         className="inline-block w-full p-4 hover:text-black bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">
-                        Création
+                        {t("creation")}
                     </Link>
                 </li>
                 <li className="w-full focus-within:z-10">
                     <Link to={CHAMPSINTERVENTION}
                         className="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">
-                        Champs d'Intervention
+                        {t("Champs d'Intervention")}
                     </Link>
                 </li>
                 <li className="w-full focus-within:z-10">
                     <Link to={HISTORIQUE}
                         className="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">
-                        Historique
+                        {t("historique")}
                     </Link>
                 </li>
                 <li className="w-full focus-within:z-10">
                     <Link to={ORGANISATION}
                         className="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">
-                        Organisation
+                        {t("organisation")}
                     </Link>
                 </li>
                 <li className="w-full focus-within:z-10">
                     <Link to={DIRECTIONGENARALE}
                         className="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">
-                        Les Directions Régionales
+                        {t("Les Directions Régionales")}
                     </Link>
                 </li>
                 <li className="w-full focus-within:z-10">
                     <Link to={ZONEINTERVENTION}
                         className="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">
-                        Zone d'Intervention
+                        {t("zone d'intervention")}
                     </Link>
                 </li>
                 <li className="w-full focus-within:z-10">
                     <Link to={GROUPECIBLE}
                         className="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">
-                        Groupe Cible
+                        {t("Groupe Cible")}
                     </Link>
                 </li>
             </ul>

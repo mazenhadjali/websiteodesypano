@@ -1,9 +1,9 @@
 import { Link, useLocation } from 'react-router-dom';
 import { HOME } from '../routes';
-
+import { useTranslation } from 'react-i18next';
 
 function Breadcrumb() {
-
+    const { t, i18n } = useTranslation();
     const location = useLocation();
 
     console.log(location)
@@ -17,7 +17,7 @@ function Breadcrumb() {
                             <path
                                 d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
                             </path>
-                        </svg> Home
+                        </svg> {t("Home")}
                     </Link>
                 </li>
                 {
@@ -30,7 +30,7 @@ function Breadcrumb() {
                                         clipRule="evenodd">
                                     </path>
                                 </svg>
-                                <span className="text-gray-700 hover:text-gray-900 ml-1 md:ml-2 text-sm font-medium capitalize">{value}</span>
+                                <span className="text-gray-700 hover:text-gray-900 ml-1 md:ml-2 text-sm font-medium capitalize">{t(value)}</span>
                             </div>
                         </li>
                     )

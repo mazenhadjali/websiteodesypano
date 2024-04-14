@@ -1,13 +1,16 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 
 function Contact() {
+    const { t, i18n } = useTranslation();
+
     return (
         <React.Fragment>
             <div className="container my-24 mx-auto md:px-6">
                 <section className="mb-32">
                     <div className="flex justify-center">
                         <div className="text-center md:max-w-xl lg:max-w-3xl">
-                            <h2 className="mb-12 px-6 text-3xl font-bold">Contactez Nous</h2>
+                            <h2 className="mb-12 px-6 text-3xl font-bold">{t("Contactez Nous")}</h2>
                         </div>
                     </div>
 
@@ -17,34 +20,34 @@ function Contact() {
                                 <div className="relative mx-4 mb-6" data-te-input-wrapper-init>
                                     <input type="text" className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-green focus:outline-none focus:ring-0" id="exampleInput90" placeholder="" />
                                     <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-green"
-                                        htmlFor="exampleInput90">Nom ou raison sociale
+                                        htmlFor="exampleInput90">{t("Nom ou raison sociale")}
                                     </label>
                                 </div>
                                 <div className="relative mx-4 mb-6" data-te-input-wrapper-init>
                                     <input type="text" className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-green focus:outline-none focus:ring-0" id="exampleInput90" placeholder="" />
                                     <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-green "
-                                        htmlFor="exampleInput90">Adresse
+                                        htmlFor="exampleInput90">{t("Adresse")}
                                     </label>
                                 </div>
                                 <div className="relative mx-4 mb-6" data-te-input-wrapper-init>
                                     <input type="text" className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-green focus:outline-none focus:ring-0" id="exampleInput90" placeholder="" />
                                     <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-green"
-                                        htmlFor="exampleInput90">Télephone
+                                        htmlFor="exampleInput90">{t("Télephone")}
                                     </label>
                                 </div>
                                 <div className="relative mx-4 mb-6" data-te-input-wrapper-init>
                                     <input type="text" className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-green focus:outline-none focus:ring-0" id="exampleInput90" placeholder="" />
                                     <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-green"
-                                        htmlFor="exampleInput90">E-mail
+                                        htmlFor="exampleInput90">{t("E-mail")}
                                     </label>
                                 </div>
                                 <div className="relative mx-1 mb-6" data-te-input-wrapper-init>
                                     <textarea className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                                         id="exampleFormControlTextarea1" rows="3" placeholder=""></textarea>
-                                    <label htmlFor="exampleFormControlTextarea1" className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-green peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none ">Message</label>
+                                    <label htmlFor="exampleFormControlTextarea1" className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-green peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none ">{t("Message")}</label>
                                 </div>
                                 <button type="button" data-te-ripple-init data-te-ripple-color="light" className="mb-6 inline-block w-full rounded bg-green px-6 pt-2.5 pb-2 text-md font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-green focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ">
-                                    Envoyer
+                                    {t("Envoyer")}
                                 </button>
                             </form>
                         </div>
@@ -62,7 +65,7 @@ function Contact() {
                                         </div>
                                         <div className="ml-6 grow">
                                             <p className="mb-2 font-bold ">
-                                                Téléphone
+                                                {t("Téléphone")}
                                             </p>
                                             <p className="text-neutral-500 ">
                                                 +216 78 450 500
@@ -81,7 +84,7 @@ function Contact() {
                                         </div>
                                         <div className="ml-6 grow">
                                             <p className="mb-2 font-bold ">
-                                                FAX
+                                                {t("FAX")}
                                             </p>
                                             <p className="text-neutral-500">
                                                 78 45 47 18
@@ -100,7 +103,7 @@ function Contact() {
                                             </div>
                                         </div>
                                         <div className="ml-6 grow">
-                                            <p className="mb-2 font-bold ">E-mail</p>
+                                            <p className="mb-2 font-bold ">{t("E-mail")}</p>
                                             <p className="text-neutral-500 ">
                                                 dgle.odesypano@email.ati.tn
                                             </p>
@@ -117,9 +120,9 @@ function Contact() {
                                             </div>
                                         </div>
                                         <div className="ml-6 grow">
-                                            <p className="mb-2 font-bold ">Adresse</p>
+                                            <p className="mb-2 font-bold ">{t("Adresse")}</p>
                                             <p className="text-neutral-500 ">
-                                                Av de l'Environnement Béja 9000 Tunisie
+                                                {t("Av de l'Environnement Béja 9000 Tunisie")}
                                             </p>
                                         </div>
                                     </div>

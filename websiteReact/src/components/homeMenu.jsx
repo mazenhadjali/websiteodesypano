@@ -14,31 +14,31 @@ function HomeMenu() {
                 </li>
                 <li className="w-full focus-within:z-10">
                     <Link to={PROJETODYSEPANO}
-                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Projet</Link>
+                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">{t('Projet')}</Link>
                 </li>
                 <li className="w-full focus-within:z-10">
                     <Link to={DOMAINEACTIVITE}
-                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Domaine d'activité</Link>
+                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">{t("Domaine d'activité")}</Link>
                 </li>
                 <li className="w-full focus-within:z-10">
                     <Link to={APPROCHEDEDEV}
-                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Approches de developpement</Link>
+                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">{t("Approches de développement")}</Link>
                 </li>
                 <li className="w-full focus-within:z-10">
                     <Link to={PARTENARIAT}
-                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Partenariat</Link>
+                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">{t("Partenariat")}</Link>
                 </li>
                 <li className="w-full focus-within:z-10">
                     <Link to={OUTILDEGESTION}
-                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Outil de gestion</Link>
+                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">{t("Outils de gestion")}</Link>
                 </li>
                 <li className="w-full focus-within:z-10">
                     <Link to={TEMOINAGE}
-                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Témoinages</Link>
+                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">{t("Témoignages")}</Link>
                 </li>
                 <li className="w-full focus-within:z-10">
                     <Link to={ACCESINFO}
-                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">Accès à l'information</Link>
+                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">{t("Accès à l'information")}</Link>
                 </li>
             </ul>
 

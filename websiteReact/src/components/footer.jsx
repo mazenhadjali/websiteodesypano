@@ -1,8 +1,9 @@
-import Contact from "../pages/contact"
 import { Link } from "react-router-dom";
 import { CONTACT, FAQ, HOME } from "../routes";
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+    const { t, i18n } = useTranslation();
     return (
         <footer className="bg-green rounded-t-lg container mx-auto ">
             <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
@@ -13,16 +14,13 @@ function Footer() {
                     </a>
                     <ul className="flex flex-wrap items-center mb-6 text-sm font-bold text-black sm:mb-0 ">
                         <li>
-                            <a href="#" className="hover:underline me-4 md:me-6">About</a>
+                            <a href="#" className="hover:underline me-4 md:me-6">{t("Privacy Policy")}</a>
                         </li>
                         <li>
-                            <a href="#" className="hover:underline me-4 md:me-6">Privacy Policy</a>
+                            <a href="#" className="hover:underline me-4 md:me-6">{t("Licensing")}</a>
                         </li>
                         <li>
-                            <a href="#" className="hover:underline me-4 md:me-6">Licensing</a>
-                        </li>
-                        <li>
-                            <Link to={CONTACT} href="#" className="hover:underline">Contact</Link>
+                            <Link to={CONTACT} href="#" className="hover:underline">{t("contact")}</Link>
                         </li>
                     </ul>
                 </div>

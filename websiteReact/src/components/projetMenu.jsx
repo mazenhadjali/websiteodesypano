@@ -13,13 +13,13 @@ function ProjetMenu() {
                 <li className="w-full focus-within:z-10">
                     <Link to={PROJETODYSEPANO}
                         className="inline-block w-full p-4 hover:text-black bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">
-                        projet de l'Odesypano
+                        {t("projet de l'Odesypano")}
                     </Link>
                 </li>
                 <li className="w-full focus-within:z-10">
                     <Link to={OBJECTIF}
                         className="inline-block w-full p-4 hover:text-black hover:bg-green focus:ring-4 focus:ring-blue-300 focus:outline-none">
-                        Quaterieme Projet
+                        {t("Quatrième Projet")}
                     </Link>
                 </li>
                 
