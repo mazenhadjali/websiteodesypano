@@ -2,7 +2,34 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { OBJECTIF,ZONE,COMPOSANTES,COUTS,SCHEMA,APPROCHE,CONTACT,QUATERIEMEPROJET,PROJETODYSEPANO, APPROCHEDEDEV,CHAMPSINTERVENTION,HISTORIQUE,ORGANISATION,DIRECTIONGENARALE,ZONEINTERVENTION,GROUPECIBLE, DOMAINEACTIVITE,PARTENARIAT,OUTILDEGESTION,TEMOINAGE,ACCESINFO, PROJET, CREATION, FAQ, HOME, PRESNTATION } from './routes';
+import {
+  OBJECTIF,
+  ZONE,
+  COMPOSANTES,
+  COUTS,
+  SCHEMA,
+  APPROCHE,
+  CONTACT,
+  QUATERIEMEPROJET,
+  PROJETODYSEPANO,
+  APPROCHEDEDEV,
+  CHAMPSINTERVENTION,
+  HISTORIQUE,
+  ORGANISATION,
+  DIRECTIONGENARALE,
+  ZONEINTERVENTION,
+  GROUPECIBLE,
+  DOMAINEACTIVITE,
+  PARTENARIAT,
+  OUTILDEGESTION,
+  TEMOINAGE,
+  ACCESINFO,
+  PROJET,
+  CREATION,
+  FAQ,
+  HOME,
+  PRESNTATION
+} from './routes';
 import './i18n';
 import Home from './pages/home';
 import HomeLayout from './layout/homeLayout';
@@ -11,7 +38,6 @@ import ProjetLayout from './layout/projetLayout';
 import Contact from './pages/contact';
 import Faq from './pages/faq';
 import Creation from './pages/creation';
-import Projet from './pages/projet';
 import DomainActivite from './pages/domaineActivite';
 import ApprocheDev from './pages/approcheDev';
 import Partenariat from './pages/partenariat';
@@ -48,7 +74,7 @@ const router = createBrowserRouter([
       },
       {
         path: FAQ,
-        element: <Faq/>
+        element: <Faq />
       },
       {
         path: DOMAINEACTIVITE,
@@ -56,23 +82,23 @@ const router = createBrowserRouter([
       },
       {
         path: APPROCHEDEDEV,
-        element: <ApprocheDev/>
+        element: <ApprocheDev />
       },
       {
         path: PARTENARIAT,
-        element: <Partenariat/>
+        element: <Partenariat />
       },
       {
         path: OUTILDEGESTION,
-        element: <OutilsGestion/>
+        element: <OutilsGestion />
       },
       {
         path: TEMOINAGE,
-        element: <Temoinage/>
+        element: <Temoinage />
       },
       {
         path: ACCESINFO,
-        element: <AccesInfo/>
+        element: <AccesInfo />
       },
     ]
   },

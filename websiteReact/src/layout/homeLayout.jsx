@@ -14,12 +14,13 @@ export default function HomeLayout() {
 
     useEffect(() => {
         const storedLang = localStorage.getItem('language');
+        console.log(storedLang)
         if (storedLang) {
             i18n.changeLanguage(storedLang);
         } else {
             i18n.changeLanguage('fr');
         }
-    }, [i18n]);
+    }, []);
 
     return (
         <React.Fragment>

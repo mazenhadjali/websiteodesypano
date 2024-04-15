@@ -1,12 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Outlet } from "react-router-dom";
 import PresentationMenu from '../components/presentationMenu';
 import RightNavigation from '../components/rightNavigation';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import Breadcrumb from '../components/breadcrumb';
+import { useTranslation } from 'react-i18next';
 
 export default function PresentationLayout() {
+    const { i18n } = useTranslation();
+
+    useEffect(() => {
+        const storedLang = localStorage.getItem('language');
+        console.log(storedLang)
+        if (storedLang) {
+            i18n.changeLanguage(storedLang);
+        } else {
+            i18n.changeLanguage('fr');
+        }
+    }, []);
     return (
         <React.Fragment>
             <Navbar />
