@@ -14,7 +14,7 @@ function HomeMenu() {
                 </li>
                 <li className="w-full focus-within:z-10">
                     <Link to={PROJETODYSEPANO}
-                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">{t('Projet')}</Link>
+                        className="inline-block w-full p-4 font-bold text-black bg-green hover:bg-white focus:ring-4 focus:ring-blue-300 focus:outline-none">{t('projet')}</Link>
                 </li>
                 <li className="w-full focus-within:z-10">
                     <Link to={DOMAINEACTIVITE}
